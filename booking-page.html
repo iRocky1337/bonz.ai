@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bonz.ai - Booking</title>
+</head>
+<body class="body__booking-page__desktop">
+    <header class="header">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <div class="hamburger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html#">About</a></li>
+                <li><a href="booking-page.html#">Booking</a></li>
+            </ul>
+        </div>
+        <section class="header__section header__section-booking-page__desktop">
+            <img class="header__logo-img" src="/img/logos/bonz.ai-logo.png" alt="bonz.ai logo">
+        </section>
+
+        <section class="section-2 section-2__booking-page__desktop">
+            <form class="section-2__form">
+                <label class="section-2__label">
+                    Check-in
+                    <input class="section-2__input" type="date" name="checkin">
+                </label>
+                <label class="section-2__label">
+                    Check-out
+                    <input class="section-2__input" type="date" name="checkout">
+                </label>
+                <label class="section-2__label">
+                    Guests
+                    <select class="section-2__label__select" name="guests">
+                        <option value="1">1 Guests</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="10">10 Guests</option>
+                    </select>
+                </label>
+                <button class="search__btn--green" type="submit">Search</button>
+            </form>
+        </section>
+
+        <article class="header__article-arrow">
+            <i class="arrow down"></i>
+        </article>
+
+        <section class="Header__section-rooms Header__section-rooms__desktop">
+            <div class="section__selected-room">
+                <h3>SELECTED ROOM</h3>
+            </div>
+            <article>
+                <img class="Header__article__img" id="img_selected" src="img/07-day.jpg" alt="hobbiton room">
+                <div class="header__article__rooms-details">
+                    <div class="header__article__rooms-h2-h3-h4-p">
+                        <h2>Hobbiton Room</h2>
+                        <div class="header__article__rooms-price">
+                            <h3>200€</h3>
+                            <h4>/per night</h4>
+                        </div>
+                        <p>Guests 3, 27m2 with view</p>
+                    </div>
+                    <div class="rooms-button">
+                        <a href="#"><button class="rooms-button_a">Book Now</button></a>
+                        <p id="rooms-more-details-btn">Details<i class="Details-arrow down"></i></p>
+                    </div>
+                </div>
+            </article>
+            <div class="middle-line footer-line"></div>
+            <section class="reservation-form">
+                <h4 class="reservation-form__heading">YOUR RESERVATION</h4>
+                <form class="reservation-form__form">
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="email">Email</label>
+                        <input type="email" name="email" class="reservation-form__input" placeholder="hotel@gmail.com">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="name">Name</label>
+                        <input type="text" id="name" name="name" class="reservation-form__input" placeholder="guest">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="address">Address</label>
+                        <input type="text" id="address" name="address" class="reservation-form__input" placeholder="stockholm 12">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="zip">ZIP Code</label>
+                        <input type="text" id="zip" name="zip" class="reservation-form__input" placeholder="111 23">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="city">City</label>
+                        <input type="text" id="city" name="city" class="reservation-form__input" placeholder="Stockholm">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="country">Country</label>
+                        <input type="text" id="country" name="country" class="reservation-form__input" placeholder="Sweden">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="phone">Phone</label>
+                            <input type="text" id="phone" name="phone" class="reservation-form__input" placeholder="0730123456">
+                    </div>
+                    <div class="reservation-form__group">
+                        <label class="reservation-form__label" for="message">Message</label>
+                        <textarea id="message" name="message" class="reservation-form__textarea" placeholder="Message"></textarea>
+                    </div>
+                </form>
+            </section>
+
+            <section class="reservation-details">
+                <h4 class="reservation-details__heading">Details</h4>
+                <div class="reservation-details__info">
+                    <p class="reservation-details__dates">
+                        <span class="reservation-details__start-date">2024-11-28</span>
+                        <span class="reservation-details__dash">-</span>
+                        <span class="reservation-details__end-date">2024-12-10</span>
+                    </p>                    
+                    <p class="reservation-details__adults">2 ADULTS</p>
+                    <p class="reservation-details__room">Hobbiton, 27m2 with a view</p>
+                </div>
+                <div class="reservation-details__total">
+                    <p class="reservation-details__total-label">TOTAL</p>
+                    <p class="reservation-details__total-amount">$200</p>
+                </div>
+               <a href="confirmation.html"><button class="reservation-details__confirm-btn" type="button">CONFIRM</button></a>
+            </section>
+            
+            <footer class="footer">
+                <div class="footer__container">
+                  <div class="footer__logo-address">
+                    <img
+                      class="footer__logo"
+                      src="/img/logos/bonz.ai-logo-black.png"
+                      alt="footer bonz.ai logo"
+                    />
+                    <address class="footer__address">
+                      Stockholm 10<br />
+                      Stockholm Park / Bonz.ai<br />
+                      Phone: (+46) 073 123 45 678
+                    </address>
+                  </div>
+                  <div class="footer__social-newsletter">
+                    <div class="footer__social">
+                      <h3 class="footer__title">Follow Us</h3>
+                      <div class="footer__social-icons">
+                        <a href="#" class="footer__icon footer__icon--facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="footer__icon footer__icon--twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer__icon footer__icon--instagram"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                    </div>
+                    <div class="footer__newsletter">
+                      <h3 class="footer__title">Our Newsletter</h3>
+                      <form class="footer__form">
+                        <input
+                          type="email"
+                          id="email"
+                          class="footer__input"
+                          placeholder="mail"
+                          name="email"
+                        />
+                        <button class="footer__button" type="submit">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+</body>
+</html>

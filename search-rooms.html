@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bonz.ai - Search</title>
+</head>
+<body class="body__search-room__desktop body_search-room">
+    <header class="header">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <div class="hamburger_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html#">About</a></li>
+                <li><a href="booking-page.html#">Booking</a></li>
+            </ul>
+        </div>
+
+        <section class="header__section">
+          <img
+          class="header__logo-img"
+          src="/img/logos/bonz.ai-logo.png"
+          alt="bonz.ai logo"
+          />
+          <article class="header__section__article">
+            <h1 class="header__section__h1">
+              Experience the <span class="header__span">difference</span> stay at
+              Bonz.ai
+            </h1>
+            <p class="header__section__p">
+              From smart amenities to personalized service, every detail is
+              designed to inspire relaxation and elevate your stay.
+            </p>
+            <a class="header__section__link" href="about.html">Discover Now</a>
+          </article>
+        </section>
+      </div>
+        <section class="section-2">
+            <form class="section-2__form">
+                <label class="section-2__label">
+                    Check-in
+                    <input class="section-2__input" type="date" name="checkin">
+                </label>
+                <label class="section-2__label">
+                    Check-out
+                    <input class="section-2__input" type="date" name="checkout">
+                </label>
+                <label class="section-2__label">
+                    Guests
+                    <select class="section-2__label__select" name="guests">
+                        <option value="1">1 Guests</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="10">10 Guests</option>
+                    </select>
+                </label>
+                <button class="search__btn--green" type="submit">Search</button>
+            </form>
+        </section>
+
+        <article class="header__article-arrow">
+            <i class="arrow down"></i>
+        </article>
+
+        <section class="Header__section-rooms">
+            <div class="section__search-results">
+                <div>
+                    <p class="section__search-results__p">3 results</p>
+                </div>
+                    <div>
+                        <p class="section__search-results__p-details" id="rooms-more-details-btn">Recommended<i class="Details-arrow down"></i></p>
+                    </div>
+                </div>
+            </div>
+            <article>
+                <img class="Header__article__img" src="img/07-day.jpg" alt="hobbiton room">
+                <div class="header__article__rooms-details">
+                    <div class="header__article__rooms-h2-h3-h4-p">
+                        <h2>Hobbiton Room</h2>
+                        <div class="header__article__rooms-price">
+                            <h3>200€</h3>
+                            <h4>/per night</h4>
+                        </div>
+                        <p>Guests 3, 27m2 with view</p>
+                    </div>
+                    <div class="rooms-button">
+                        <a href="booking-page.html"><button class="rooms-button_a" type="button">Book Now</button></a>
+                        <p id="rooms-more-details-btn">Details<i class="Details-arrow down"></i></p>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <img class="Header__article__img" src="img/01-day.jpg" alt="hobbiton room">
+                <div class="header__article__rooms-details">
+                    <div class="header__article__rooms-h2-h3-h4-p">
+                        <h2>Milford Room</h2>
+                        <div class="header__article__rooms-price">
+                            <h3>250€</h3>
+                            <h4>/per night</h4>
+                        </div>
+                        <p>Guests 2, 38m2 with view</p>
+                    </div>
+                    <div class="rooms-button">
+                        <a href="#"><button class="rooms-button_a">Book Now</button></a>
+                        <p id="rooms-more-details-btn">Details<i class="Details-arrow down"></i></p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <img class="Header__article__img" src="img/02-day.jpg" alt="room1">
+                <div class="header__article__rooms-details">
+                    <div class="header__article__rooms-h2-h3-h4-p">
+                        <h2>Mount Cook Room</h2>
+                        <div class="header__article__rooms-price">
+                            <h3>310€</h3>
+                            <h4>/per night</h4>
+                        </div>
+                        <p>Guests 3, 40m2 with view</p>
+                    </div>
+                    <div class="rooms-button">
+                        <a href="#"><button class="rooms-button_a">Book Now</button></a>
+                        <p id="rooms-more-details-btn">Details<i class="Details-arrow down"></i></p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </header>
+
+    <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__logo-address">
+            <img
+              class="footer__logo"
+              src="/img/logos/bonz.ai-logo-black.png"
+              alt="footer bonz.ai logo"
+            />
+            <address class="footer__address">
+              Stockholm 10<br />
+              Stockholm Park / Bonz.ai<br />
+              Phone: (+46) 073 123 45 678
+            </address>
+          </div>
+          <div class="footer__social-newsletter">
+            <div class="footer__social">
+              <h3 class="footer__title">Follow Us</h3>
+              <div class="footer__social-icons">
+                <a href="#" class="footer__icon footer__icon--facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="footer__icon footer__icon--twitter"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="footer__icon footer__icon--instagram"><i class="fa-brands fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="footer__newsletter">
+              <h3 class="footer__title">Our Newsletter</h3>
+              <form class="footer__form">
+                <input
+                  type="email"
+                  id="email"
+                  class="footer__input"
+                  placeholder="mail"
+                  name="email"
+                />
+                <button class="footer__button" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

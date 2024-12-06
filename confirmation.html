@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bonz.ai - Confirmation</title>
+</head>
+<body>
+    <header class="header">
+        <header class="header">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <div class="hamburger_menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html#">About</a></li>
+                    <li><a href="booking-page.html#">Booking</a></li>
+                </ul>
+            </div>
+        <section class="header__section">
+            <img class="header__logo-img" src="/img/logos/bonz.ai-logo.png" alt="bonz.ai logo">
+        </section>
+        <section class="confirmation confirmation_desktop">
+        <section class="section__confirmation">
+                <div>
+                    <img class="confirmation__img" src="img/confirmed.png" alt="confirmation sign img">
+                </div>
+                <p class="confirmation__p">Thank you for your reservation</p>
+                <p class="confirmation__p">A receipt and order confirmation
+                    has <br>been sent to your registered email.</p>
+                </section>
+        </section>
+        <section class="section-2 section-2__desktop">
+            <form class="section-2__form">
+                <label class="section-2__label">
+                    Check-in
+                    <input class="section-2__input" type="date" name="checkin">
+                </label>
+                <label class="section-2__label">
+                    Check-out
+                    <input class="section-2__input" type="date" name="checkout">
+                </label>
+                <label class="section-2__label">
+                    Guests
+                    <select class="section-2__label__select" name="guests">
+                        <option value="1">1 Guests</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="10">10 Guests</option>
+                    </select>
+                </label>
+                <button class="search__btn--green" type="submit">Search</button>
+            </form>
+        </section>
+        <footer class="footer">
+            <div class="footer__container">
+              <div class="footer__logo-address">
+                <img
+                  class="footer__logo"
+                  src="/img/logos/bonz.ai-logo-black.png"
+                  alt="footer bonz.ai logo"
+                />
+                <address class="footer__address">
+                  Stockholm 10<br />
+                  Stockholm Park / Bonz.ai<br />
+                  Phone: (+46) 073 123 45 678
+                </address>
+              </div>
+              <div class="footer__social-newsletter">
+                <div class="footer__social">
+                  <h3 class="footer__title">Follow Us</h3>
+                  <div class="footer__social-icons">
+                    <a href="#" class="footer__icon footer__icon--facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="footer__icon footer__icon--twitter"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="footer__icon footer__icon--instagram"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+                </div>
+                <div class="footer__newsletter">
+                  <h3 class="footer__title">Our Newsletter</h3>
+                  <form class="footer__form">
+                    <input
+                      type="email"
+                      id="email"
+                      class="footer__input"
+                      placeholder="mail"
+                      name="email"
+                    />
+                    <button class="footer__button" type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </footer>
+</body>
+</html>
